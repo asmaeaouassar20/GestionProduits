@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Image principale -->
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Main Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+    <!-- Bouton flottant Sign In -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/mainImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+    android:contentDescription="Sign In Button"
+    android:maxWidth="130dp"
+    android:src="@drawable/log_in" />
+
+    <!-- Texte à côté du bouton Sign In -->
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSignIn"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:textSize="16sp"
+        android:textColor="#9B7EBD" />
+
+    <!-- Bouton flottant Sign Up -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtSignIn"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/add_user"
+    android:contentDescription="Sign Up Button" />
+
+    <!-- Texte à côté du bouton Sign Up -->
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:textColor="#9B7EBD" />
+
+</RelativeLayout>
